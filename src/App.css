@@ -1,0 +1,182 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html{
+  /*background:linear-gradient(#232323,#252525);*/
+  overflow-x: hidden;
+}
+
+
+.container{
+  display:flex;
+  justify-content: center;
+  padding-top: 6rem;
+  flex-wrap: wrap;
+}
+
+.logo{
+  text-transform: uppercase;
+  font-family: lato;
+  width:10rem;
+  font-size: 2rem;
+  padding-bottom:0.3rem;
+  text-align: center;
+}
+
+.logo-part--1{
+  color:teal;
+}
+.logo-part--2{
+  color:tomato;
+}
+
+.logo-part--2::after{
+  content:".com";
+  font-size:0.75rem;
+  color:white;
+}
+
+.element{
+  margin:2rem;
+  width:370px;
+  text-align: center;
+  border-radius: 0.5rem;
+  border:1px solid rgb(126, 126, 126);
+}
+
+.description{
+  text-transform: uppercase;
+  font-family: lato;
+  letter-spacing: 1px;
+  word-spacing: 3px;
+}
+
+.title{
+  display: block;
+  color: rgb(43, 43, 43);
+  font-size: 90%;
+  margin-bottom: 0.2rem;;
+}
+
+.price{
+  color: rgb(90, 90, 90);
+  font-size: 80%;
+}
+
+.add-btn{
+  color:rgb(192, 206, 228);
+  cursor:pointer;
+  border:none;
+  width:5rem;
+  background:rgb(28, 80, 122);
+  text-transform: uppercase;
+  margin:1rem auto;
+  font-weight: 700;
+  padding:0.3rem;
+  border-radius: 3px;
+  transition:background-color 400ms linear;
+}
+
+.extended-btn{
+  width:1.5rem;
+  font-size: 1rem;
+  padding:0.2rem;
+  color:#fff
+}
+
+.up{
+  background-color: rgb(53, 172, 49);
+  margin-left: 0.5rem;
+}
+
+.down{
+  background-color: tomato;
+  margin-right: 0.5rem;
+}
+
+img {
+  height: 215px;
+  width: auto;
+  padding:2rem;
+}
+
+.nav-bar{
+  display:flex;
+  width:100vw;
+  position: fixed;
+  align-items: center;
+  background:rgb(43, 43, 43);
+  box-shadow: 0 0.2rem 1rem rgb(65, 64, 64);
+  justify-content: space-evenly;
+  padding:1rem 0;
+  margin-bottom: 1rem;
+}
+
+.nav-bar input{
+  display:block;
+  width:100%;
+  font-size: 1.5rem;
+  padding:0.25rem;
+  height: 2.5rem;
+  border-radius: 4px;
+  border: transparent;
+}
+*:focus{
+  outline:none;
+}
+
+.nav-bar button{
+  height: 2.5rem;
+  padding:0 0.5rem;
+  text-align: center;
+}
+.search-bar{
+  display: flex;
+  position: relative;
+  width:50%
+}
+.srch-btn{
+  position: absolute;
+  top:0;
+  right:0;
+  bottom:0;
+  font-size: 150%;
+  width:8%;
+  background-color: rgb(27, 59, 128);
+  border-top-right-radius:4px;
+  border-bottom-right-radius:4px;
+  border:none;
+  cursor: pointer;
+  color: #fff;
+}
+.cart-icon{
+  position: relative;
+}
+
+.shoppin-btn{
+  color:white;
+  background:transparent;
+  border:none;
+  font-size: 250%;
+  cursor: pointer;
+}
+.cartvalue{
+  position:absolute;
+  top:0;
+  right:0;
+  color:white
+}
+
+footer{
+  background-color: #222;
+  width:100vw;
+  height:10vh;
+  color: #fff;
+  text-align: center;
+  padding:2rem 0;
+  margin-top: 2rem;
+}
+
